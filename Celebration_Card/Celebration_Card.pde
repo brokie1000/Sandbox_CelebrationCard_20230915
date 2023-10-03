@@ -10,7 +10,7 @@ int sizeFont, size; //Text Variables
 //
 void setup() {
   //Print & Println
-  println("Hello World");
+  println("Michael Jordan");
   println("Width:"+width, "\t", "Height:"+height);
   println("Display Width: "+displayWidth, "\tDisplay Height: "+displayHeight);
   //Character Escapes, tab, new
