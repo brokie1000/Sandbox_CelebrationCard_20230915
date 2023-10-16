@@ -3,6 +3,7 @@ int appWidth, appHeight;
 float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
 float xRectQuit, yRectQuit, widthRectQuit, heightRectQuit;
 //String ; //All text variables as name=value pairs
+PImage ramadan;
 //PFont ; //All fonts used
 //color ; //colour palette & inks
 int sizeFont, size; //Text Variables
@@ -10,7 +11,7 @@ int sizeFont, size; //Text Variables
 //
 void setup() {
   //Print & Println
-  println("Michael Jordan");
+  println("Ramadan Kareem");
   println("Width:"+width, "\t", "Height:"+height);
   println("Display Width: "+displayWidth, "\tDisplay Height: "+displayHeight);
   //Character Escapes, tab, new
@@ -29,6 +30,7 @@ void setup() {
   yRectQuit = appHeight*1/4;
   widthRectQuit = appWidth*1/2;
   heightRectQuit = appHeight*1/2;
+  ramadan = loadImage("../Saved Pictures/realistic-three-dimensional-ramadan-kareem-illustration_52683-57837.jpg");
   //
   //DIVs
   rect(xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
@@ -48,6 +50,9 @@ void setup() {
 //
 void draw() {
 
+  rect(xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
+  rect(xRectQuit, yRectQuit, widthRectQuit, heightRectQuit);
+  image(ramadan, xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
   //Drawing Text, copied for each line of text
   //fill( [colourName] ); //ink
   textAlign( CENTER, CENTER ); //Align X&Y, see Processing.org / Reference
